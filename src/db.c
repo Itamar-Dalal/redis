@@ -889,6 +889,7 @@ int dbGenericDelete(redisDb *db, robj *key, int async, int flags) {
 
 /* Delete a key, value, and associated expiration entry if any, from the DB */
 int dbSyncDelete(redisDb *db, robj *key) {
+    sleep(0.5);
     return dbGenericDelete(db, key, 0, DB_FLAG_KEY_DELETED);
 }
 
