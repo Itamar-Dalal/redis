@@ -11733,7 +11733,7 @@ struct COMMAND_ARG WATCH_Args[] = {
 };
 
 
-#ifndef PASTEN_CMD__TABLE
+#ifndef PASTEN_CMD_TABLE
 #define PASTEN_History NULL
 #define PASTEN_Tips NULL
 #define PASTEN_Keyspecs NULL
